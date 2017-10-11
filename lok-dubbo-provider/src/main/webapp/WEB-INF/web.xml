@@ -9,7 +9,7 @@
 	<!-- 配置文件 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:/**/application-*.xml</param-value>
+		<param-value>classpath:/**/applicationContext*.xml</param-value>
 	</context-param>
 
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->

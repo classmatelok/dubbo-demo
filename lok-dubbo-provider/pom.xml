@@ -8,6 +8,8 @@
   <properties>
   	<spring.version>4.2.8.RELEASE</spring.version>
   	<dubbo.version>2.5.5</dubbo.version>
+  	<servlet-api.version>2.5</servlet-api.version>
+  	<jsp-api.version>2.0</jsp-api.version>
   </properties>
   
   <dependencies>
@@ -39,6 +41,20 @@
 	    <artifactId>dubbo</artifactId>
 	    <version>${dubbo.version}</version>
 	  </dependency>
+	  
+	  <!-- jsp -->
+	  <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+          <version>${servlet-api.version}</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jsp-api</artifactId>
+          <version>${jsp-api.version}</version>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
   
   <build>
