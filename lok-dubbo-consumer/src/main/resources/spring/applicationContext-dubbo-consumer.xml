@@ -10,7 +10,8 @@
     <!-- 配置dubbo服务-消费方 -->
     <dubbo:application name="demo-consumer"/>
     <!-- 使用广播(这里可不指定，而在下面增加url属性配置dubbo直连方式) -->
-    <dubbo:registry address="multicast://224.5.6.7:1234"/>
+    <!-- <dubbo:registry address="multicast://224.5.6.7:1234"/> -->
+    <dubbo:registry address="N/A"/>
     <!-- 声明要调用的服务，timeout是设置连接超时最长时间,如果不设置，超时时间默认是3秒 -->
     <dubbo:reference id="testDubboService" interface="com.lok.provider.TestDubboService"
      url="127.0.0.1:20880"/>
