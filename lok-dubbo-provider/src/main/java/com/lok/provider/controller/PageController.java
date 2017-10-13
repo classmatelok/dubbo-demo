@@ -1,4 +1,4 @@
-package com.lok.controller;
+package com.lok.provider.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @Description 
  * @date 2017年10月10日
+ * url:localhost:8082/pages/xxx/xxx
  */
-
 @Controller
 @RequestMapping("pages")
 public class PageController {

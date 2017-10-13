@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>consumer</title>
+<title>consumer页面</title>
 </head>
 <body>
-	here is consumer!
+	dubbo集成springmvc正常显示！！
 </body>
 </html>

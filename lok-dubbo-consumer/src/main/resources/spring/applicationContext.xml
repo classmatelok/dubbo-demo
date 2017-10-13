@@ -25,7 +25,7 @@
     </bean>
     
     <!-- 包扫描 -->
-    <context:component-scan base-package="com.lok"/>
+    <context:component-scan base-package="com.lok.consumer"/>
     
     <!-- 数据库 -->
     <bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">

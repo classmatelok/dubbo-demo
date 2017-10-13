@@ -10,9 +10,17 @@
   	<dubbo.version>2.5.5</dubbo.version>
   	<servlet-api.version>2.5</servlet-api.version>
   	<jsp-api.version>2.0</jsp-api.version>
+  	<jolbox.version>0.8.0.RELEASE</jolbox.version>
   </properties>
   
   <dependencies>
+      <!-- 依赖interface工程 -->
+  	  <dependency>
+  	  	<groupId>com.lok.dubbo.interface</groupId>
+	  	<artifactId>lok-dubbo-interface</artifactId>
+	  	<version>0.0.1-SNAPSHOT</version>
+  	  </dependency>
+  
 	  <!-- spring相关 -->
 	  <dependency>
 	  	<groupId>org.springframework</groupId>
@@ -55,6 +63,12 @@
           <version>${jsp-api.version}</version>
           <scope>provided</scope>
       </dependency>
+      <!-- 连接池 -->
+      <dependency>
+          <groupId>com.jolbox</groupId>
+          <artifactId>bonecp-spring</artifactId>
+          <version>${jolbox.version}</version>
+      </dependency>
   </dependencies>
   
   <build>
@@ -83,6 +97,7 @@
         <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
             <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
             <configuration>
             	<port>8082</port>
             	<path>/</path>

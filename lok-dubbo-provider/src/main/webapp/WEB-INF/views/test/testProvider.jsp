@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>provider</title>
+<title>provider页面</title>
 </head>
 <body>
-	here is provider!
+	dubbo集成springmvc正常显示！！
 </body>
 </html>
